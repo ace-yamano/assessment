@@ -128,6 +128,6 @@ console.assert(
         '診断結果の文言の特定の部分を名前に置き換える処理が正しくありません。'
 );
 console.assert(
-    assessment('太郎','男') === assessment('太郎','男'),
+    assessment('花子','女') === assessment('花子','女'),
     '入力が同じ名前なら同じ診断結果を出力する処理が正しくありません。'
 );
