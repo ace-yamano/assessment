@@ -1,0 +1,47 @@
+body {
+    background-color: #04a6eb;
+    color: #fdffff;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+button {
+    padding: 5px 20px;
+    font-size: 12pt;
+    background-color: #7872d3;
+    color: #fdffff;
+    border-style: none;
+}
+
+button:hover {
+    box-shadow: none;
+    color:  #7872d3;
+    background: #fdffff;
+    font-weight: bold;
+}
+input {
+    height: 20px;
+}
+.radio-plain input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    position: relative;
+}
+/* チェックボックス直後の label */
+.radio-plain input[type="radio"] + label {
+    padding: 0 4px;         /* label の余白         */
+    font-size: 14pt;        /* label の文字サイズ   */
+    font-weight: normal;    /* 文字の太さ           */
+    border-radius: 5px;     /* label1 の角丸        */
+    cursor: pointer;        /* カーソルの設定       */
+    transition: .2s;        /* なめらか変化         */
+}
+/* 選択されたチェックボックス直後の label　*/
+.radio-plain input[type="radio"]:checked + label {
+    font-weight: bold;      /* label 太字           */    
+}
+/* 選択されていないチェックボックスの直後のlabelにマウスが乗った*/
+.radio-plain input[type="radio"]:not(:checked) + label:hover {
+    font-weight: bold;      /* label 太字           */
+}
